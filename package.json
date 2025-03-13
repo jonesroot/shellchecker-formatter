@@ -2,7 +2,7 @@
   "name": "acode-scfmtr-acode",
   "version": "1.0.1",
   "description": "ShellCheck & Formatter",
-  "main": "src/main.js",
+  "main": "main.js",
   "repository": "https://github.com/jonesroot/shellchecker-formatter.git",
   "author": "Lucifer <https://t.me/LuciferReborns>",
   "license": "MIT",
