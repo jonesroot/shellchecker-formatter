@@ -1,19 +1,19 @@
 {
-  "id": "acode.plugin",
-  "name": "Plugin",
+  "id": "shellcheck.plugin",
+  "name": "ShellCheck & Formatter",
   "main": "main.js",
   "version": "1.0.0",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [],
-  "minVersionCode" : 290,
+  "minVersionCode": 290,
   "license": "MIT",
   "changelogs": "changelogs.md",
-  "keywords": [],
+  "keywords": ["shell", "shellcheck", "formatter"],
   "price": 0,
   "author": {
-    "name": "",
+    "name": "Lucifer",
     "email": "",
-    "github": ""
+    "github": "https://github.com/jonesroot"
   }
 }
