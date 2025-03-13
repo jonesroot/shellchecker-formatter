@@ -16,6 +16,14 @@ module.exports = (env, options) => {
         },
       ],
     },
+    {
+      test: /\.scss$/,
+      use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader',
+      ],
+    },
   ];
 
   const main = {
@@ -35,7 +43,6 @@ module.exports = (env, options) => {
       {
         apply: (compiler) => {
           compiler.hooks.afterDone.tap('pack-zip', () => {
-            // run pack-zip.js
             exec('node .vscode/pack-zip.js', (err, stdout, stderr) => {
               if (err) {
                 console.error(err);
@@ -50,4 +57,4 @@ module.exports = (env, options) => {
   };
 
   return [main];
-}
+};
