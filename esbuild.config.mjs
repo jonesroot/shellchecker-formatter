@@ -34,7 +34,7 @@ const buildConfig = {
   logLevel: "info",
   color: true,
   outdir: "dist",
-  plugins: [zipPlugin, sassPlugin()],
+  plugins: [zipPlugin, sassPlugin(), esbuildPluginSass()],
 };
 
 
