@@ -1,4 +1,5 @@
 import * as esbuild from "esbuild";
+import { sassPlugin } from "esbuild-sass-plugin";
 import { exec } from "child_process";
 import esbuildPluginSass from "esbuild-plugin-sass";
 
@@ -26,15 +27,14 @@ const zipPlugin = {
 };
 
 
-let buildConfig = {
-  entryPoints: ["src/main.js", "src/styles.scss"],
+const buildConfig = {
+  entryPoints: ["src/main.js"],
   bundle: true,
   minify: true,
   logLevel: "info",
   color: true,
   outdir: "dist",
-  plugins: [zipPlugin, esbuildPluginSass()],
-  external: ["acode"],
+  plugins: [zipPlugin, sassPlugin()],
 };
 
 
