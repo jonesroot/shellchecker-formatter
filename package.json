@@ -11,7 +11,7 @@
   "@types/ace": "^0.0.52"
 },
   "devDependencies": {
-  "esbuild": "^0.15.0",
+  "esbuild": "^0.19.4",
   "esbuild-sass-plugin": "^2.16.1",
   "jszip": "^3.10.1",
   "@babel/cli": "^7.23.0",
