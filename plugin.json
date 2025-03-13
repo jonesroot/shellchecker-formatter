@@ -1,7 +1,7 @@
 {
-  "id": "lucifer.acode.shellcheck",
+  "id": "acode-scfmtr-acode",
   "name": "ShellCheck & Formatter",
-  "main": "main.js",
+  "main": "src/main.js",
   "version": "1.0.1",
   "readme": "readme.md",
   "icon": "icon.png",
@@ -13,7 +13,7 @@
   "price": 0,
   "author": {
     "name": "Lucifer",
-    "email": "",
-    "github": "https://github.com/jonesroot"
+    "email": "ikyodeos378@gmail.com",
+    "github": "https://github.com/jonesroot/shellchecker-formatter.git"
   }
 }
