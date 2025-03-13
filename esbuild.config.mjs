@@ -33,6 +33,7 @@ let buildConfig = {
   color: true,
   outdir: "dist",
   plugins: [zipPlugin],
+  external: ["acode"],
 };
 
 // Main function to handle both serve and production builds
