@@ -28,7 +28,7 @@ const zipPlugin = {
 
 
 const buildConfig = {
-  entryPoints: ["main.js"],
+  entryPoints: ["src/main.js"],
   bundle: true,
   minify: true,
   logLevel: "info",
