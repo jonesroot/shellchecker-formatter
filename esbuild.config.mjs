@@ -1,9 +1,10 @@
 import * as esbuild from "esbuild";
 import { exec } from "child_process";
+import esbuildPluginSass from "esbuild-plugin-sass";
 
 const isServe = process.argv.includes("--serve");
 
-// Function to pack the ZIP file
+
 function packZip() {
   exec("node .vscode/pack-zip.js", (err, stdout, stderr) => {
     if (err) {
@@ -14,7 +15,7 @@ function packZip() {
   });
 }
 
-// Custom plugin to pack ZIP after build or rebuild
+
 const zipPlugin = {
   name: "zip-plugin",
   setup(build) {
@@ -24,7 +25,7 @@ const zipPlugin = {
   },
 };
 
-// Base build configuration
+
 let buildConfig = {
   entryPoints: ["src/main.js", "src/styles.scss"],
   bundle: true,
@@ -32,16 +33,15 @@ let buildConfig = {
   logLevel: "info",
   color: true,
   outdir: "dist",
-  plugins: [zipPlugin],
+  plugins: [zipPlugin, esbuildPluginSass()],
   external: ["acode"],
 };
 
-// Main function to handle both serve and production builds
+
 (async function () {
   if (isServe) {
     console.log("Starting development server...");
 
-    // Watch and Serve Mode
     const ctx = await esbuild.context(buildConfig);
 
     await ctx.watch();
