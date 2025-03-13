@@ -30,7 +30,6 @@ const buildConfig = {
   logLevel: "info",
   color: true,
   outdir: "dist",
-  outfile: "dist/main.js",
   plugins: [zipPlugin, sassPlugin()],
 };
 
