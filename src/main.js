@@ -1,6 +1,6 @@
 import plugin from '../plugin.json';
 import styles from "./styles.scss";
-// import acode from "acode";
+import acode from "acode";
 
 const fs = acode.require("fs");
 const settings = acode.require("settings");
