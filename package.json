@@ -24,8 +24,7 @@
   },
   "scripts": {
     "dev": "node esbuild.config.mjs --serve",
-    "build": "webpack",
-    "build-release": "webpack --mode production",
+    "build": "node esbuild.config.mjs",
     "start-dev": "node .vscode/start-dev"
   },
   "browserslist": "cover 100%,not android < 5"
